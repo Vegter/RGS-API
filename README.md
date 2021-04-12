@@ -16,7 +16,7 @@ the version 3.3 specification has been extended with the MKB filter of
 
 ## Usage
 
-Swagger documentation will be added on short terms
+Please have a look at the [Swagger documentation](https://rgsapi.herokuapp.com/api-docs/)
 
 Basic API usage is:
 

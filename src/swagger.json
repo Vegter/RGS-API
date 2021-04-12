@@ -1,0 +1,141 @@
+{
+  "swagger": "2.0",
+  "info": {
+    "description": "Referentie GrootboekSchema (RGS) API",
+    "version": "0.0.1",
+    "title": "RGS API",
+    "license": {
+      "name": "Mozilla Public License Version 2.0"
+    }
+  },
+  "host": "rgsapi.herokuapp.com",
+  "basePath": "/",
+  "tags": [
+    {
+      "name": "rgs",
+      "description": "Referentie GrootboekSchema"
+    }
+  ],
+  "schemes": [
+    "https"
+  ],
+  "paths": {
+    "/rgs/{version}/": {
+      "get": {
+        "tags": [
+          "rgs"
+        ],
+        "summary": "Get RGS Ledger Accounts",
+        "description": "Get (a selection of) RGS Ledger Accounts",
+        "operationId": "get",
+        "produces": [
+          "application/json"
+        ],
+        "parameters": [
+          {
+            "in": "path",
+            "name": "version",
+            "required": true,
+            "type": "string",
+            "enum": [
+              "3.3"
+            ],
+            "default": "3.3",
+            "description": "RGS version"
+          },
+          {
+            "name": "MKB_ZZP",
+            "in": "query",
+            "description": "BoekhoudPlaza MKB ZZP Schema",
+            "required": false,
+            "type": "boolean"
+          },
+          {
+            "name": "Basis",
+            "in": "query",
+            "description": "Basis RGS Schema",
+            "required": false,
+            "type": "boolean"
+          },
+          {
+            "name": "EZ_VOF",
+            "in": "query",
+            "description": "EigenZaak VOF RGS Schema",
+            "required": false,
+            "type": "boolean"
+          },
+          {
+            "name": "ZZP",
+            "in": "query",
+            "description": "ZZP RGS Schema",
+            "required": false,
+            "type": "boolean"
+          },
+          {
+            "name": "Nivo",
+            "in": "query",
+            "description": "RGS Nivo",
+            "required": false,
+            "type": "integer",
+            "enum": [
+              1,
+              2,
+              3,
+              4,
+              5
+            ]
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "successful operation",
+            "schema": {
+              "type": "array",
+              "items": {
+                "$ref": "#/definitions/ApiResponse"
+              }
+            }
+          },
+          "404": {
+            "description": "RGS Version not implemented"
+          }
+        }
+      }
+    }
+  },
+  "definitions": {
+    "ApiResponse": {
+      "type": "object",
+      "properties": {
+        "Referentiecode": {
+          "type": "string"
+        },
+        "ReferentieOmslagcode": {
+          "type": "string"
+        },
+        "Sortering": {
+          "type": "string"
+        },
+        "Referentienummer": {
+          "type": "string"
+        },
+        "OmschrijvingKort": {
+          "type": "string"
+        },
+        "Omschrijving": {
+          "type": "string"
+        },
+        "DC": {
+          "type": "string"
+        },
+        "Nivo": {
+          "type": "integer"
+        }
+      }
+    }
+  },
+  "externalDocs": {
+    "description": "Find out more about RGS",
+    "url": "https://www.referentiegrootboekschema.nl/"
+  }
+}
