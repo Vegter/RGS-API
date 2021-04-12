@@ -2,6 +2,11 @@
 
 A REST API for the Referentie Grootboek Schema
 
+A working version van be found at:
+
+- [Heroku](https://rgsapi.herokuapp.com/rgs/?MKB_ZZP)
+
+
 The RGS versions that are served by this API is currently version
 [Referentie GrootboekSchema 3.3](https://referentiegrootboekschema.nl/definitieve-versie-rgs-33)
 
