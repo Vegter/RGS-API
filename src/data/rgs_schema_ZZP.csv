@@ -1,0 +1,193 @@
+RefNr;Omschrijving lang;Nivo;DC;Omslagcode;RGS-code;Sortering
+100000;Immateriële vaste activa;2;D;;BIva;A
+107000;Goodwill;3;D;;BIvaGoo;A.D
+107010;Verkrijgings- of vervaardigingsprijs goodwill;4;D;;BIvaGooVvp;A.D.A
+107020;Cumulatieve afschrijvingen en waardeverminderingen goodwill;4;C;;BIvaGooCae;A.D.B
+200000;Materiële vaste activa;2;D;;BMva;B
+202000;Bedrijfsgebouwen;3;D;;BMvaBeg;B.B
+202010;Verkrijgings- of vervaardigingsprijs bedrijfsgebouwen;4;D;;BMvaBegVvp;B.B.A
+202020;Cumulatieve afschrijvingen en waardeverminderingen bedrijfsgebouwen;4;C;;BMvaBegCae;B.B.B
+210000;Machines en installaties;3;D;;BMvaMei;B.D
+210010;Verkrijgings- of vervaardigingsprijs machines en installaties;4;D;;BMvaMeiVvp;B.D.A
+210020;Cumulatieve afschrijvingen en waardeverminderingen machines en installaties;4;C;;BMvaMeiCae;B.D.B
+213000;Automobielen en overige transportmiddelen;3;D;;BMvaTev;B.I
+213010;Verkrijgings- of vervaardigingsprijs automobielen en overige transportmiddelen;4;D;;BMvaTevVvp;B.I.A
+213020;Cumulatieve afschrijvingen en waardeverminderingen automobielen en overige transportmiddelen;4;C;;BMvaTevCae;B.I.B
+214000;Andere vaste bedrijfsmiddelen;3;D;;BMvaObe;B.E
+214010;Verkrijgings- of vervaardigingsprijs andere vaste bedrijfsmiddelen;4;D;;BMvaObeVvp;B.E.A
+214020;Cumulatieve afschrijvingen en waardeverminderingen andere vaste bedrijfsmiddelen;4;C;;BMvaObeCae;B.E.B
+215000;Inventaris;3;D;;BMvaBei;B.H
+215010;Verkrijgings- of vervaardigingsprijs inventaris;4;D;;BMvaBeiVvp;B.H.A
+215020;Cumulatieve afschrijvingen en waardeverminderingen inventaris;4;C;;BMvaBeiCae;B.H.B
+500000;Groepsvermogen - Eigen vermogen - Kapitaal;2;C;;BEiv;J
+509000;Eigen vermogen onderneming natuurlijke personen;3;C;;BEivKap;J.M
+509010;Ondernemingsvermogen exclusief fiscale reserves fiscaal eigen vermogen onderneming natuurlijke personen;4;C;;BEivKapOnd;J.M.A
+509030;Privé-stortingen;4;C;;BEivKapPrs;J.M.B
+509040;Privé-opnamen;4;D;;BEivKapPro;J.M.C
+510000;Fiscale reserves;3;C;;BEivFir;J.Y
+510010;Fiscale oudedagsreserve eigen vermogen onderneming natuurlijke personen;4;C;;BEivFirFor;J.Y.B
+510020;Herinvesteringsreserve fiscaal eigen vermogen onderneming natuurlijke personen;4;C;;BEivFirHer;J.Y.A
+510090;Overige fiscale reserves eigen vermogen onderneming natuurlijke personen;4;C;;BEivFirOfr;J.Y.H
+800000;Langlopende schulden;2;C;;BLas;L
+805000;Schulden aan banken;3;C;;BLasSak;L.E
+805010;Hoofdsom hypotheken van kredietinstellingen (langlopend);4;C;;BLasSakHvl;L.E.A0
+805015;Cumulatieve aflossingen hypotheken van kredietinstellingen (langlopend);4;D;;BLasSakCla;L.E.A1
+805030;Hoofdsom leningen van kredietinstellingen (langlopend);4;C;;BLasSakLvl;L.E.C0
+805035;Cumulatieve aflossingen leningen van kredietinstellingen (langlopend);4;D;;BLasSakLca;L.E.C1
+806129;Overige schulden;3;C;;BLasOls;L.U
+806130;Hoofdsom overige schulden (langlopend);4;C;;BLasOlsOsl;L.U.A
+806135;Aflossingen;4;D;;BLasOlsAfl;L.U.A1
+1000000;Liquide middelen;2;D;;BLim;I
+1001000;Kasmiddelen;3;D;;BLimKas;I.A
+1001010;Kas kasmiddelen;4;D;;BLimKasKas;I.A010
+1002000;Tegoeden op bankgirorekeningen;3;D;;BLimBan;I.B
+1002010;Rekening-courant bank tegoeden op bankgirorekeningen;4;D;;BLimBanRba;I.B.A
+1002030;Depositorekening tegoeden op bankgirorekeningen;4;D;;BLimBanDep;I.B.C
+1002050;Internetrekening tegoeden op bankgirorekeningen;4;D;;BLimBanInb;I.B.F
+1003000;Kruisposten;3;D;;BLimKru;I.C
+1003010;Stortingen onderweg kruisposten;4;D;;BLimKruSto;I.C010
+1100000;Vorderingen;2;D;;BVor;G
+1101000;Vorderingen op handelsdebiteuren;3;D;;BVorDeb;G.A
+1101010;Handelsdebiteuren nominaal;4;D;;BVorDebHad;G.A.010
+1101050;Tussenrekening ontvangsten debiteuren (ontvangsten onderweg);4;D;;BVorDebTus;G.A.050
+1102010;Terug te vorderen Omzetbelasting vorderingen uit hoofde van belastingen;4;D;BSchBepBtw;BVorVbkTvo;G.G.B
+1103000;Overige vorderingen;3;D;;BVorOvr;G.K
+1103159;Vorderingen uit hoofde van belastingen;3;D;;BVorVbk;G.G
+1103190;Overige vorderingen overige vorderingen;4;D;BSchOvsOvs;BVorOvrOvk;G.K.T
+1104000;Overlopende activa;3;D;;BVorOva;G.L
+1104030;Nog te factureren of nog te verzenden facturen overlopende activa;4;D;;BVorOvaNtf;G.L.C
+1104240;Vooruitbetaalde andere kosten overlopende activa;4;D;BSchOpaNtb;BVorOvaVan;G.L.U
+1105000;Tussenrekeningen;3;D;;BVorTus;G.M
+1106000;Tussenrekeningen overig;4;D;BSchTusTov;BVorTusTov;G.M.J
+1200000;Kortlopende schulden;2;C;;BSch;M
+1203000;Schulden aan leveranciers en handelskredieten;3;C;;BSchCre;M.D
+1203010;Handelscrediteuren nominaal schulden aan leveranciers en handelskredieten;4;C;;BSchCreHac;M.D.A
+1203050;Tussenrekening betalingen crediteuren (betalingen onderweg);4;C;;BSchCreTus;M.D.E
+1205009;Belastingen en premies sociale verzekeringen;3;C;;BSchBep;M.K
+1205010;Te betalen Omzetbelasting belastingen en premies sociale verzekeringen;4;C;BVorVbkTvo;BSchBepBtw;M.K.A
+1209000;Overige schulden;3;C;;BSchOvs;M.P
+1209029;Schulden aan banken;3;C;;BSchSak;M.B
+1209030;Rekening-courant bij kredietinstellingen schulden aan kredietinstellingen;4;C;;BSchSakRba;M.B.A
+1209150;Overige schulden overige schulden;4;C;BVorOvrOvk;BSchOvsOvs;M.P.M
+1210000;Overlopende passiva;3;C;;BSchOpa;M.Q
+1210020;Nog te betalen andere kosten overlopende passiva;4;C;BVorOvaVan;BSchOpaNtb;M.Q.B
+1210260;Vooruitgefactureerde omzet;4;C;;BSchOpaVgo;M.Q.Z020
+1220000;Tussenrekeningen;3;C;;BSchTus;M.R
+1229000;Tussenrekeningen overig;4;C;BVorTusTov;BSchTusTov;M.R.J
+3000000;Voorraden;2;D;;BVrd;E
+3001000;Handelsgoederen;3;D;;BVrdHan;E.E
+3001010;Handelsgoederen, bruto handelsgoederen;4;D;;BVrdHanVoo;E.E.010
+3002000;Voorraad grond- en hulpstoffen;3;D;;BVrdGeh;E.A
+3002010;Voorraad grond- en hulpstoffen, bruto voorraad grond- en hulpstoffen;4;D;;BVrdGehVoo;E.A.010
+3101000;Onderhanden werk;3;D;;BVrdOwe;E.C
+3101010;Onderhanden werk, bruto onderhanden werk;4;D;;BVrdOweVoo;E.C.010
+3500000;Onderhanden projecten (activa);2;D;;BPro;F
+3501000;Onderhanden projecten in opdracht van derden;3;D;;BProOnp;F.A
+3501010;Onderhanden projecten in opdracht van derden, geactiveerde kosten voor nog niet geleverde diensten onderhanden projecten in opdracht van derden;4;D;;BProOnpGkn;F.A.A
+3501020;Gefactureerde termijnen;4;C;;BProOnpGet;F.A.D
+4100000;Afschrijvingen op immateriële en materiële vaste activa;2;D;;WAfs;T
+4101000;Afschrijvingen op immateriële vaste activa;3;D;;WAfsAiv;T.A
+4101070;Afschrijvingen goodwill afschrijvingen op immateriële vaste activa;4;D;;WAfsAivGoo;T.A.D
+4102000;Afschrijvingen op materiële vaste activa;3;D;;WAfsAmv;T.B
+4102010;Afschrijvingen Bedrijfsgebouwen;4;D;;WAfsAmvBeg;T.B.B
+4102050;Afschrijvingen Machines en installaties;4;D;;WAfsAmvMei;T.B.E
+4102070;Afschrijvingen Automobielen en overige transportmiddelen;4;D;;WAfsAmvTev;T.B.I
+4102080;Afschrijvingen Andere vaste bedrijfsmiddelen;4;D;;WAfsAmvObe;T.B.F
+4102090;Afschrijvingen Inventaris;4;D;;WAfsAmvBei;T.B.J
+4106000;Winsten of verliezen die ontstaan als gevolg van de buitengebruikstelling of afstoting van een materieel vast actief;3;C;;WAfsRvm;T.E
+4106010;Boekresultaat Bedrijfsgebouwen boekresultaat op materiële vaste activa;4;C;;WAfsRvmBeg;T.E.B
+4106050;Boekresultaat Machines en installaties boekresultaat op materiële vaste activa;4;C;;WAfsRvmMei;T.E.E
+4106070;Boekresultaat Automobielen en overige transportmiddelen boekresultaat op materiële vaste activa;4;C;;WAfsRvmTev;T.E.I
+4106080;Boekresultaat Andere vaste bedrijfsmiddelen boekresultaat op materiële vaste activa;4;C;;WAfsRvmObe;T.E.F
+4106090;Boekresultaat Inventaris boekresultaat op materiële vaste activa;4;C;;WAfsRvmBei;T.E.J
+4200000;Overige bedrijfskosten;2;D;;WBed;W
+4201000;Huisvestingskosten;3;D;;WBedHui;W.C
+4201040;Betaalde huur huisvestingskosten;4;D;;WBedHuiBeh;W.C.E
+4201100;Servicekosten huisvestingskosten;4;D;;WBedHuiSer;W.C.K
+4201105;Gas,water en elektra;4;D;;WBedHuiGwe;W.C.L
+4201150;Privé-gebruik energie huisvestingskosten;4;C;;WBedHuiPre;W.C.P
+4201270;Overige huisvestingskosten huisvestingskosten;4;D;;WBedHuiOhv;W.C.Z.02
+4202000;Exploitatie- en machinekosten;3;D;;WBedEem;W.D
+4202050;Gereedschapskosten exploitatie- en machinekosten;4;D;;WBedEemGsk;W.D.F
+4202140;Onderhoud machines en installaties exploitatie- en machinekosten;4;D;;WBedEemOme;W.D.O
+4202280;Overige exploitatie- en machinekosten;4;D;;WBedEemOee;W.D.Z.05
+4203000;Verkoop gerelateerde kosten;3;D;;WBedVkk;W.E
+4203060;Representatiekosten verkoop gerelateerde kosten;4;D;;WBedVkkRep;W.E.G
+4203070;Reis- en verblijfkosten verkoop gerelateerde kosten;4;D;;WBedVkkRev;W.E.H
+4203110;Kilometervergoeding zakelijke reizen verkoop gerelateerde kosten;4;D;;WBedVkkKmz;W.E.L
+4203170;Afboeking dubieuze debiteuren verkoop gerelateerde kosten;4;D;;WBedVkkAdd;W.E.R
+4203200;Websitekosten verkoop gerelateerde kosten;4;D;;WBedVkkWeb;W.E.U
+4203220;Overige verkoopkosten verkoop gerelateerde kosten;4;D;;WBedVkkOvr;W.E.W
+4204000;Autokosten;3;D;;WBedAut;W.F
+4204010;Brandstofkosten auto's autokosten;4;D;;WBedAutBra;W.F.A
+4204020;Reparatie en onderhoud auto's autokosten;4;D;;WBedAutRoa;W.F.C
+4204030;Assurantiepremie auto's autokosten;4;D;;WBedAutAsa;W.F.D
+4204040;Motorrijtuigenbelasting auto's autokosten;4;D;;WBedAutMot;W.F.E
+4204050;Operational leasing auto's autokosten;4;D;;WBedAutOpa;W.F.F
+4204070;Privé-gebruik auto's autokosten;4;C;;WBedAutPga;W.F.H
+4204080;BTW op privé-gebruik auto's autokosten;4;D;;WBedAutBop;W.F.I
+4204190;Parkeerkosten auto's autokosten;4;D;;WBedAutPar;W.F.T
+4204200;Overige autokosten autokosten;4;D;;WBedAutOak;W.F.U
+4206000;Kantoorkosten;3;D;;WBedKan;W.H
+4206010;Kantoorbenodigdheden kantoorkosten;4;D;;WBedKanKan;W.H.A
+4206030;Telefoonkosten kantoorkosten;4;D;;WBedKanTef;W.H.D
+4206040;Privé-gebruik telefoon kantoorkosten;4;C;;WBedKanPrt;W.H.E
+4206060;Kleine aanschaffingen kantoorinventaris kantoorkosten;4;D;;WBedKanKak;W.H.G
+4206070;Contributies en abonnementen kantoorkosten;4;D;;WBedKanCea;W.H.H
+4206080;Vakliteratuur kantoorkosten;4;D;;WBedKanVak;W.H.I
+4206090;Boekhouding kantoorkosten;4;D;;WBedKanBoe;W.H.J
+4206110;Kosten automatisering kantoorkosten;4;D;;WBedKanKoa;W.H.L
+4206150;Overige kantoorkosten kantoorkosten;4;D;;WBedKanOka;W.H.P
+4208000;Assurantiekosten;3;D;;WBedAss;W.J
+4208010;Bedrijfsaansprakelijkheidsverzekering assurantiekosten;4;D;;WBedAssBea;W.J.A
+4208020;Overige assurantiepremies assurantiekosten;4;D;;WBedAssOva;W.J.C
+4210000;Administratieve lasten;3;D;;WBedAdl;W.L
+4210020;Overige belastingen administratieve lasten;4;D;;WBedAdlOvb;W.L.C
+4210070;Betalingsverschillen administratieve lasten;4;D;;WBedAdlBet;W.L.H
+4210110;BTW kleine-ondernemers-regeling administratieve lasten;4;C;;WBedAdlBtk;W.L.L
+4210120;Overige administratieve lasten administratieve lasten;4;D;;WBedAdlOad;W.L.M
+4215000;Andere kosten;3;D;;WBedAlk;W.R
+4215010;Algemene kosten andere kosten;4;D;;WBedAlkOal;W.R.A
+7000000;Kostprijs van de omzet;2;D;;WKpr;Q
+7001000;Kosten van grond- en hulpstoffen;3;D;;WKprKvg;Q.A
+7001010;Kosten van grond- en hulpstoffen, ingekocht in Nederland kosten van grond- en hulpstoffen;4;D;;WKprKvgKvg;Q.A.A
+7005000;Inkoopwaarde handelsgoederen;3;D;;WKprInh;Q.H
+7005010;Inkoopwaarde handelsgoederen;4;D;;WKprInhInh;Q.H.A
+7008000;Betalingskortingen;3;D;;WKprBtk;Q.K
+7008010;Betalingskorting debiteuren;4;D;;WKprBtkBed;Q.K.A
+7008020;Betalingskortingen op inkopen inkoopwaarde handels- en productiegoederen;4;D;;WKprBtkBec;Q.K.B
+7011000;Voorraadmutatie;3;D;;WKprVom;Q.N
+7011010;Voorraadmutatie inkoopwaarde handels- en productiegoederen;4;D;;WKprVomVom;Q.N.A
+8000000;Netto-omzet;2;C;;WOmz;O
+8001000;Netto-omzet uit leveringen geproduceerde goederen opbrengsten uit de verkoop van goederen;3;C;;WOmzNop;O.A
+8001010;1a. Netto-omzet uit leveringen geproduceerde goederen belast met hoog tarief;4;C;;WOmzNopOlh;O.A010
+8001020;1b. Netto-omzet uit leveringen geproduceerde goederen belast met laagd tarief;4;C;;WOmzNopOlv;O.A020
+8001030;1c. Netto-omzet uit leveringen geproduceerde goederen belast met overige tarieven, behalve 0%;4;C;;WOmzNopOlo;O.A030
+8001040;1d. Netto-omzet uit privégebruik geproduceerde goederen;4;C;;WOmzNopOpg;O.A040
+8001080;3b. Netto-omzet uit leveringen geproduceerde goederen naar landen binnen EU;4;C;;WOmzNopOli;O.A080
+8002000;Netto-omzet uit verkoop van handelsgoederen opbrengsten uit de verkoop van goederen;3;C;;WOmzNoh;O.B
+8002010;1a. Netto-omzet uit verkoop van handelsgoederen belast met hoog tarief;4;C;;WOmzNohOlh;O.B010
+8002020;1b. Netto-omzet uit verkoop van handelsgoederen belast met laag tarief;4;C;;WOmzNohOlv;O.B020
+8002030;1c. Netto-omzet uit verkoop van handelsgoederen belast met overige tarieven, behalve 0%;4;C;;WOmzNohOlo;O.B030
+8002050;1d. Netto-omzet uit privégebruik handelsgoederen;4;C;;WOmzNohOpg;O.B060
+8002090;3b. Netto-omzet uit leveringen handelsgoederen naar landen binnen de EU;4;C;;WOmzNohOli;O.B100
+8003000;Opbrengsten uit het verlenen van diensten;3;C;;WOmzNod;O.C
+8003010;1a. Netto-omzet uit verleende diensten belast met hoog tarief;4;C;;WOmzNodOdh;O.C010
+8003020;1b. Netto-omzet uit verleende diensten belast met laag tarief;4;C;;WOmzNodOdl;O.C020
+8003030;1c. Netto-omzet uit verleende diensten belast met overige tarieven, behalve 0%;4;C;;WOmzNodOdo;O.C030
+8003040;1d Netto-omzet uit privégebruik verleende diensten;4;C;;WOmzNodOpd;O.C040
+8003080;3b. Netto-omzet uit verleende diensten naar landen binnen de EU;4;C;;WOmzNodOdi;O.C080
+8200000;Overige bedrijfsopbrengsten;2;C;;WOvb;R
+8213000;Overige opbrengsten;3;C;;WOvbOvo;R.N
+8213010;Overige opbrengsten niet elders genoemd baten uit overige activiteiten;4;C;;WOvbOvoOvo;R.N.A
+8400000;Financiële baten en lasten;2;C;;WFbe;Z.02
+8402000;Rentebaten en soortgelijke opbrengsten;3;C;;WFbeRlm;Z.02.A
+8402110;Rente liquide middelen rentebaten en soortgelijke opbrengsten;4;C;WFbeOrlRkb;WFbeRlmRlm;Z.02.A070
+8403020;Overige rentebaten rentebaten en soortgelijke opbrengsten;4;C;WFbeOrlOrl;WFbeRlmAre;Z.02.A190
+8404000;Rentelasten en soortgelijke kosten;3;D;;WFbeRls;Z.02.B
+8404030;Rentelasten onderhandse leningen;4;D;;WFbeRlsRol;Z.02.B030
+8404040;Rentelasten hypethecaire leningen;4;D;;WFbeRlsRhl;Z.02.B040
+8404060;Rentelasten financieringen;4;D;;WFbeRlsRef;Z.02.B060
+8406000;Overige rentelasten;3;D;;WFbeOrl;Z.02.C
+8406050;Rente en kosten bank;4;D;WFbeRlmRlm;WFbeOrlRkb;Z.02.C050
+8406090;Overige rentelasten rentelasten en soortgelijke kosten;4;D;WFbeRlmAre;WFbeOrlOrl;Z.02.C090
