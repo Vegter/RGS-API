@@ -23,6 +23,12 @@ Basic API usage is:
 - /rgs
   
   Returns all RGS ledger accounts
+
+
+- /rgslint
+
+  Checks the consistency of RGS
+  If a scheme is specified (eg ?scheme=ZZP) the consistency of the specified scheme is checked as well
   
 
 - /rgs/3.3/

@@ -32,6 +32,10 @@ export abstract class RGS {
         return this.config.fields
     }
 
+    public get accounts(): RGSData[] {
+        return this.data
+    }
+
     public get primaryFilters(): string[] {
         return this.config.primaryFilters
     }

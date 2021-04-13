@@ -2,13 +2,15 @@ import { Request, Response } from "express"
 
 import { RGS, RGSFilter } from "./RGS"
 import { RGS3_3 } from "./3.3/RGS3.3"
+import { RGSLint } from "./rgslint"
+
+const DEFAULT_RGS_VERSION = "3.3"
 
 const RGSVersion: Record<string, () => RGS> = {
-    "3.3": () => RGS3_3.instance
+    [DEFAULT_RGS_VERSION]: () => RGS3_3.instance
 }
 
-function *RGSBuilder(rgs: RGS, filters: RGSFilter[]): Generator {
-    const data = rgs.streamData(filters)
+function *RGSBuilder(data: Generator<any>): Generator {
     let i = 0
 
     yield "["
@@ -31,7 +33,7 @@ function RGSWrite(data: Generator, res: Response): void {
 
 export function RGSHandler(request: Request, response: Response): void {
     // Check requested RGS version
-    const version = request.params.version || "3.3"
+    const version = request.params.version || DEFAULT_RGS_VERSION
     if (! (version in RGSVersion)) {
         response.status(404).send(`RGS Version ${version} not implemented`)
         return
@@ -59,6 +61,28 @@ export function RGSHandler(request: Request, response: Response): void {
     }, [] as RGSFilter[])
 
     // Build the response and stream it to the client
-    const data = RGSBuilder(rgs, filters)
-    RGSWrite(data, response)
+    const data = rgs.streamData(filters)
+    RGSWrite(RGSBuilder(data), response)
+}
+
+export function RGSLintHandler(request: Request, response: Response): void {
+    // Check requested RGS version
+    const version = request.params.version || DEFAULT_RGS_VERSION
+    if (! (version in RGSVersion)) {
+        response.status(404).send(`RGS Version ${version} not implemented`)
+        return
+    }
+
+    // Instantiate version (if this is the first request for this version)
+    const rgs = RGSVersion[version]()
+
+    const scheme = request.query["scheme"] as string
+    if (scheme && !rgs.allFilters.includes(scheme)) {
+        response.status(404).send(`RGS Scheme ${scheme} not found`)
+        return
+    }
+
+    // Build the response and stream it to the client
+    const data = RGSLint(rgs, scheme)
+    RGSWrite(RGSBuilder(data), response)
 }
