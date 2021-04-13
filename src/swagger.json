@@ -101,6 +101,74 @@
           }
         }
       }
+    },
+    "/rgslint/{version}/": {
+      "get": {
+        "tags": [
+          "rgslint"
+        ],
+        "summary": "Check RGS consistency",
+        "description": "Check RGS consistency of RGS Ledger Accounts",
+        "operationId": "getlint",
+        "produces": [
+          "application/json"
+        ],
+        "parameters": [
+          {
+            "in": "path",
+            "name": "version",
+            "required": true,
+            "type": "string",
+            "enum": [
+              "3.3"
+            ],
+            "default": "3.3",
+            "description": "RGS version"
+          },
+          {
+            "name": "scheme",
+            "in": "query",
+            "description": "RGS Scheme",
+            "required": false,
+            "type": "string",
+            "enum": [
+              "ZZPBelastingdienst",
+              "Basis",
+              "Uitgebreid",
+              "EZ_VOF",
+              "ZZP",
+              "WoCo",
+              "BeginBalans",
+              "Agro",
+              "WKR",
+              "EZ_VOF",
+              "BV",
+              "WoCo",
+              "Bank",
+              "OZWCoopStichtFWO",
+              "AfrekSyst",
+              "Nivo5",
+              "Uitbreiding5",
+              "MKB_ZZP"
+            ]
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "successful operation",
+            "schema": {
+              "type": "array",
+              "items": {
+                "type": "string",
+                "example": "Parent expected for BLimBan"
+              }
+            }
+          },
+          "404": {
+            "description": "RGS Version not implemented or RGS Scheme not found"
+          }
+        }
+      }
     }
   },
   "definitions": {
@@ -108,28 +176,36 @@
       "type": "object",
       "properties": {
         "Referentiecode": {
-          "type": "string"
+          "type": "string",
+          "example": "BVorVbkTvo"
         },
         "ReferentieOmslagcode": {
-          "type": "string"
+          "type": "string",
+          "example": "BSchBepBtw"
         },
         "Sortering": {
-          "type": "string"
+          "type": "string",
+          "example": "G.G.B"
         },
         "Referentienummer": {
-          "type": "string"
+          "type": "string",
+          "example": 1102010
         },
         "OmschrijvingKort": {
-          "type": "string"
+          "type": "string",
+          "example": "Terug te vorderen Omzetbelasting"
         },
         "Omschrijving": {
-          "type": "string"
+          "type": "string",
+          "example": "Terug te vorderen Omzetbelasting vorderingen uit hoofde van belastingen"
         },
         "DC": {
-          "type": "string"
+          "type": "string",
+          "example": "D"
         },
         "Nivo": {
-          "type": "integer"
+          "type": "integer",
+          "example": 4
         }
       }
     }
