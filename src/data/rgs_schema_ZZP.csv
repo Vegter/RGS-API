@@ -29,6 +29,9 @@ RefNr;Omschrijving lang;Nivo;DC;Omslagcode;RGS-code;Sortering
 510020;Herinvesteringsreserve fiscaal eigen vermogen onderneming natuurlijke personen;4;C;;BEivFirHer;J.Y.A
 510090;Overige fiscale reserves eigen vermogen onderneming natuurlijke personen;4;C;;BEivFirOfr;J.Y.H
 800000;Langlopende schulden;2;C;;BLas;L
+804000;Financiële lease verplichtingen;3;C;;BLasFlv;L.D
+804010;Hoofdsom financiële lease verplichtingen;4;C;;BLasFlvFlv;L.D.A
+804020;Cumulatieve aflossingen converteerbare leningen;4;D;;BLasFlvCla;L.D.B
 805000;Schulden aan banken;3;C;;BLasSak;L.E
 805010;Hoofdsom hypotheken van kredietinstellingen (langlopend);4;C;;BLasSakHvl;L.E.A0
 805015;Cumulatieve aflossingen hypotheken van kredietinstellingen (langlopend);4;D;;BLasSakCla;L.E.A1
@@ -103,15 +106,22 @@ RefNr;Omschrijving lang;Nivo;DC;Omslagcode;RGS-code;Sortering
 4200000;Overige bedrijfskosten;2;D;;WBed;W
 4201000;Huisvestingskosten;3;D;;WBedHui;W.C
 4201040;Betaalde huur huisvestingskosten;4;D;;WBedHuiBeh;W.C.E
+4201060;Huurwaarde woongedeelte huisvestingskosten;4;C;;WBedHuiHuw;W.C.G
+4201080;Onderhoud gebouwen huisvestingskosten;4;D;;WBedHuiOng;W.C.I
 4201100;Servicekosten huisvestingskosten;4;D;;WBedHuiSer;W.C.K
 4201105;Gas,water en elektra;4;D;;WBedHuiGwe;W.C.L
 4201150;Privé-gebruik energie huisvestingskosten;4;C;;WBedHuiPre;W.C.P
+4201160;Assurantiepremies onroerende zaak huisvestingskosten;4;D;;WBedHuiAoz;W.C.Q
+4201170;Onroerende zaakbelasting huisvestingskosten;4;D;;WBedHuiOnz;W.C.R
+4201180;Milieuheffingen en zuiveringsleges huisvestingskosten;4;D;;WBedHuiMez;W.C.S
+4201190;Overige belastingen inzake huisvesting huisvestingskosten;4;D;;WBedHuiObh;W.C.T
 4201270;Overige huisvestingskosten huisvestingskosten;4;D;;WBedHuiOhv;W.C.Z.02
 4202000;Exploitatie- en machinekosten;3;D;;WBedEem;W.D
 4202050;Gereedschapskosten exploitatie- en machinekosten;4;D;;WBedEemGsk;W.D.F
 4202140;Onderhoud machines en installaties exploitatie- en machinekosten;4;D;;WBedEemOme;W.D.O
 4202280;Overige exploitatie- en machinekosten;4;D;;WBedEemOee;W.D.Z.05
 4203000;Verkoop gerelateerde kosten;3;D;;WBedVkk;W.E
+4203010;Reclame- en advertentiekosten verkoop gerelateerde kosten;4;D;;WBedVkkRea;W.E.A
 4203060;Representatiekosten verkoop gerelateerde kosten;4;D;;WBedVkkRep;W.E.G
 4203070;Reis- en verblijfkosten verkoop gerelateerde kosten;4;D;;WBedVkkRev;W.E.H
 4203110;Kilometervergoeding zakelijke reizen verkoop gerelateerde kosten;4;D;;WBedVkkKmz;W.E.L
@@ -130,8 +140,10 @@ RefNr;Omschrijving lang;Nivo;DC;Omslagcode;RGS-code;Sortering
 4204200;Overige autokosten autokosten;4;D;;WBedAutOak;W.F.U
 4206000;Kantoorkosten;3;D;;WBedKan;W.H
 4206010;Kantoorbenodigdheden kantoorkosten;4;D;;WBedKanKan;W.H.A
+4206020;Porti kantoorkosten;4;D;;WBedKanPor;W.H.C
 4206030;Telefoonkosten kantoorkosten;4;D;;WBedKanTef;W.H.D
 4206040;Privé-gebruik telefoon kantoorkosten;4;C;;WBedKanPrt;W.H.E
+4206050;Drukwerk kantoorkosten;4;D;;WBedKanDru;W.H.F
 4206060;Kleine aanschaffingen kantoorinventaris kantoorkosten;4;D;;WBedKanKak;W.H.G
 4206070;Contributies en abonnementen kantoorkosten;4;D;;WBedKanCea;W.H.H
 4206080;Vakliteratuur kantoorkosten;4;D;;WBedKanVak;W.H.I
@@ -143,6 +155,9 @@ RefNr;Omschrijving lang;Nivo;DC;Omslagcode;RGS-code;Sortering
 4208020;Overige assurantiepremies assurantiekosten;4;D;;WBedAssOva;W.J.C
 4210000;Administratieve lasten;3;D;;WBedAdl;W.L
 4210020;Overige belastingen administratieve lasten;4;D;;WBedAdlOvb;W.L.C
+4210030;Kasverschillen administratieve lasten;4;D;;WBedAdlKav;W.L.D
+4210040;Bankkosten administratieve lasten;4;D;;WBedAdlBan;W.L.E
+4210060;Boekingsverschillen administratieve lasten;4;D;;WBedAdlBov;W.L.G
 4210070;Betalingsverschillen administratieve lasten;4;D;;WBedAdlBet;W.L.H
 4210110;BTW kleine-ondernemers-regeling administratieve lasten;4;C;;WBedAdlBtk;W.L.L
 4210120;Overige administratieve lasten administratieve lasten;4;D;;WBedAdlOad;W.L.M
@@ -158,6 +173,8 @@ RefNr;Omschrijving lang;Nivo;DC;Omslagcode;RGS-code;Sortering
 7008020;Betalingskortingen op inkopen inkoopwaarde handels- en productiegoederen;4;D;;WKprBtkBec;Q.K.B
 7011000;Voorraadmutatie;3;D;;WKprVom;Q.N
 7011010;Voorraadmutatie inkoopwaarde handels- en productiegoederen;4;D;;WKprVomVom;Q.N.A
+7012000;Privé-gebruik goederen;3;C;;WKprPrg;Q.O
+7012010;Privé-gebruik goederen inkoopwaarde handels- en productiegoederen;4;C;;WKprPrgPrg;Q.O.A
 8000000;Netto-omzet;2;C;;WOmz;O
 8001000;Netto-omzet uit leveringen geproduceerde goederen opbrengsten uit de verkoop van goederen;3;C;;WOmzNop;O.A
 8001010;1a. Netto-omzet uit leveringen geproduceerde goederen belast met hoog tarief;4;C;;WOmzNopOlh;O.A010
@@ -188,6 +205,11 @@ RefNr;Omschrijving lang;Nivo;DC;Omslagcode;RGS-code;Sortering
 8404030;Rentelasten onderhandse leningen;4;D;;WFbeRlsRol;Z.02.B030
 8404040;Rentelasten hypethecaire leningen;4;D;;WFbeRlsRhl;Z.02.B040
 8404060;Rentelasten financieringen;4;D;;WFbeRlsRef;Z.02.B060
+8404070;Rentelasten leaseverplichtingen;4;D;;WFbeRlsRlv;Z.02.B070
 8406000;Overige rentelasten;3;D;;WFbeOrl;Z.02.C
 8406050;Rente en kosten bank;4;D;WFbeRlmRlm;WFbeOrlRkb;Z.02.C050
 8406090;Overige rentelasten rentelasten en soortgelijke kosten;4;D;WFbeRlmAre;WFbeOrlOrl;Z.02.C090
+8407000;Wisselkoersverschillen;3;D;;WFbeWis;Z.02.D
+8407010;Valutakoersverschillen rentelasten en soortgelijke kosten;4;D;;WFbeWisWis;Z.02.D020
+8520000;Rentekosten begrepen in de leasetermijn in geval van financiële leasing;3;D;;WFbeRfl;Z.02.U
+8520100;Rentekosten begrepen in de leasetermijn in geval van financiële leasing;4;D;;WFbeRflRfl;Z.02.U010
